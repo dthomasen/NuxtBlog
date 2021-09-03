@@ -14,7 +14,7 @@
 
       <Seperator />
  -->
-      <h1 class="mb-4">
+      <h1 class="mb-4 font-semibold text-2xl">
         Latest blog posts
       </h1>
       <BlogPostsDisplay
