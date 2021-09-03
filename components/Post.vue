@@ -11,7 +11,7 @@
     <img
       :src="require(`@/assets/images/posts/${markdown.image || 'default.jpeg'}`)"
       alt=""
-      class="md:h-96 w-full object-cover"
+      class="md:h-96 mr-8 w-full object-cover"
     />
     <nuxt-content class="m-8 prose max-w-none" :document="markdown" />
   </div>
