@@ -1,7 +1,7 @@
 <template>
   <NuxtLink class="" :to="`/posts/${post.slug}`">
     <div class="bg-white mx-auto shadow-lg rounded-lg hover:shadow-xl transition duration-200">
-      <nuxt-img class="rounded-t-lg" :src="`images/posts/${post.image || 'test.jpeg'}`" alt="" />
+      <img class="rounded-t-lg" :src="require(`@/assets/images/posts/${post.image || 'test.jpeg'}`)" alt="" />
       <div class="py-4 px-8">
         <h1 class="mt-2 text-gray-900 font-bold text-2xl tracking-tight">
           {{ post.title }}
