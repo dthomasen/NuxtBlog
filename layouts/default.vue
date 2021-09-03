@@ -1,8 +1,8 @@
 <template>
-  <div class="bg-gray-100 h-screen">
-    <NavBar />
+  <div class="bg-gray-100 h-full">
+    <!-- <NavBar /> -->
     <Nuxt />
-    <Footer />
+    <Footer class="mt-8" />
   </div>
 </template>
 

@@ -15,13 +15,27 @@
       <Seperator />
 
       <h1 class="mb-4">
-        Blog posts
+        Latest blog posts
       </h1>
-      <BlogPostsDisplay />
+      <BlogPostsDisplay
+        :posts="posts"
+      />
     </div>
   </div>
 </template>
 
 <script>
-export default {}
+export default {
+  async asyncData ({ $content, params, error }) {
+    const posts = await $content()
+      .fetch()
+      .catch((err) => {
+        console.log(err)
+      })
+    console.log(posts)
+    return {
+      posts
+    }
+  }
+}
 </script>
