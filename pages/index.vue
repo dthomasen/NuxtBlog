@@ -5,7 +5,7 @@
 
       <Seperator />
 
-      <h1 class="mb-4">
+      <!-- <h1 class="mb-4">
         About me
       </h1>
       <div class="text-gray-800 leading-normal font-normal text-lg">
@@ -13,7 +13,7 @@
       </div>
 
       <Seperator />
-
+ -->
       <h1 class="mb-4">
         Latest blog posts
       </h1>

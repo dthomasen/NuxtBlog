@@ -1,13 +1,17 @@
 <template>
   <div>
-    <h1>Post</h1>
-    <div v-if="page">
-      <Post
-        :markdown="page"
-      />
-    </div>
-    <div v-else>
-      Post ikke fundet
+    <div class="grid justify-items-center ml-8 mr-8">
+      <div class="max-w-5xl">
+        <BackButton />
+        <div v-if="page">
+          <Post
+            :markdown="page"
+          />
+        </div>
+        <div v-else>
+          Post ikke fundet
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -23,6 +27,11 @@ export default {
       })
     return {
       page
+    }
+  },
+  methods: {
+    goBack () {
+      window.history.length > 1 ? this.$router.go(-1) : this.$router.push('/')
     }
   }
 }
