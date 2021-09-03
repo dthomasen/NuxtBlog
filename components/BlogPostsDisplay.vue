@@ -12,7 +12,10 @@
 <script>
 export default {
   props: {
-    posts: [Object]
+    posts: {
+      type: Array,
+      default: null
+    }
   }
 }
 </script>

@@ -14,7 +14,10 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+    ],
+    image: {
+      // Options
+    }
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -39,7 +42,8 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
-    '@nuxt/content'
+    '@nuxt/content',
+    '@nuxt/image'
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios

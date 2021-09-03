@@ -19,7 +19,7 @@
         </div>
 
         <div class="hero-image col-span-6 place-self-center">
-          <img :src="require(`@/assets/images/me.jpeg`)" alt="Photo of me" class="rounded-full h-64 w-64">
+          <nuxt-img :src="`images/me.jpeg`" alt="Photo of me" class="rounded-full h-64 w-64" />
         </div>
       </div>
     </div>
