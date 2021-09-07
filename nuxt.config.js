@@ -19,6 +19,13 @@ export default {
     }
   },
 
+  googleAnalytics: {
+    debug: {
+      enabled: false
+    },
+    id: 'UA-65044463-5'
+  },
+
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
   ],
@@ -34,7 +41,8 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/tailwindcss',
+    '@nuxtjs/google-analytics'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
