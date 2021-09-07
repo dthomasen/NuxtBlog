@@ -28,11 +28,13 @@
 export default {
   async asyncData ({ $content, params, error }) {
     const posts = await $content()
+      .sortBy('createdAt', 'desc')
       .fetch()
       .catch((err) => {
         console.log(err)
       })
-    console.log(posts)
+
+    // console.log(posts)
     return {
       posts
     }

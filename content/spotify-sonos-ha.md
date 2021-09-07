@@ -1,6 +1,5 @@
 ---
 title: 'Starting Spotify playlist on Sonos via Home Assistant'
-date: '03-09-2021'
 image: 'music.jpeg' 
 ---
 
