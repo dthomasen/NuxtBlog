@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="grid justify-items-center ml-8 mr-8">
+    <div class="md:grid md:justify-items-center ml-8 mr-8">
       <div class="max-w-5xl">
         <BackButton />
         <div v-if="page">
