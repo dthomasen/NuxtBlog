@@ -4,5 +4,7 @@
 @tailwind utilities;
 
 @layer base {
-
+html {
+  @apply bg-gray-100
+}
   }
